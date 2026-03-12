@@ -1,0 +1,25 @@
+portals:
+  - id: data_go_kr
+    name: 공공데이터포털
+    type: data_go_kr
+    base_url: https://www.data.go.kr/tcs/dss/selectDataSetList.do
+    api_key: ${DATA_GO_KR_API_KEY}
+    enabled: true
+    timeout: 10
+    description: 대한민국 공공데이터 포털 (data.go.kr)
+
+  - id: sample_ckan
+    name: 샘플 CKAN 포털
+    type: ckan
+    base_url: https://demo.ckan.org
+    enabled: true
+    timeout: 10
+    description: CKAN 오픈소스 데이터 포털 예시
+
+  - id: sample_dcat
+    name: 샘플 DCAT 포털
+    type: dcat_rdf
+    base_url: https://data.europa.eu/api/hub/search/datasets
+    enabled: true
+    timeout: 15
+    description: DCAT/RDF 기반 유럽 데이터 포털 예시
